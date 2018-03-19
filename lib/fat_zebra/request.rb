@@ -76,8 +76,14 @@ module FatZebra
       @request = Net::HTTP::Put.new(uri.path)
 
       setup_auth_basic if params[:basic_auth]
-      set_header
-      request.body = params[:payload].to_json
+
+      if params[:payload] && params[:payload][:file]
+        request['Content-Type'] = params[:content_type]
+        request.body = params[:payload][:file].read
+      else
+        set_header
+        request.body = params[:payload].to_json
+      end
 
       handle_request
     end

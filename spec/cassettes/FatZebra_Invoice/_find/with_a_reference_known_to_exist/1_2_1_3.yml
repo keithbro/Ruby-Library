@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gateway.sandbox.fatzebra.com.au/v1.0/invoices/abcd1234?test=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - gateway.sandbox.fatzebra.com.au
+      Authorization:
+      - Basic VEVTVDpURVNU
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 19 Mar 2018 11:25:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - miss
+      Cache-Control:
+      - no-store, private
+      X-Request-Version:
+      - 1.16.9-2947@60ea2dd
+      X-Runtime:
+      - '0.011174'
+      Pragma:
+      - no-cache
+      X-Request-Id:
+      - 52601973d880ce30043fc449f3d8bc3b
+      X-Backend:
+      - sbox-priv-gateway-a
+    body:
+      encoding: UTF-8
+      string: '{"successful":true,"response":{"amount":123,"currency":"AUD","description":"Coffee","reference":"abcd1234","payable":true},"errors":[],"test":true}'
+    http_version: 
+  recorded_at: Mon, 19 Mar 2018 11:25:17 GMT
+recorded_with: VCR 3.0.3

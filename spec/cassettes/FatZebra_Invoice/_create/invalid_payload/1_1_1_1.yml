@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://gateway.sandbox.fatzebra.com.au/v1.0/invoices
+    body:
+      encoding: UTF-8
+      string: '{"content_type":"text/csv","test":true}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic VEVTVDpURVNU
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 19 Mar 2018 11:25:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 400 Bad Request
+      X-Rack-Cache:
+      - invalidate, pass
+      Cache-Control:
+      - no-store
+      X-Request-Version:
+      - 1.16.9-2947@60ea2dd
+      X-Runtime:
+      - '0.011698'
+      Pragma:
+      - no-cache
+      X-Request-Id:
+      - bb973191d1f0850160d7bab5a20b9515
+      X-Backend:
+      - sbox-priv-gateway-a
+    body:
+      encoding: UTF-8
+      string: '{"successful":false,"response":null,"errors":["Bad Request"],"test":true}'
+    http_version: 
+  recorded_at: Mon, 19 Mar 2018 11:25:16 GMT
+recorded_with: VCR 3.0.3

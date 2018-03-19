@@ -36,6 +36,7 @@ require 'fat_zebra/direct_credit'
 require 'fat_zebra/bank_account'
 require 'fat_zebra/web_hook'
 require 'fat_zebra/batch'
+require 'fat_zebra/invoice'
 
 ##
 # Implementation of the FatZebra
