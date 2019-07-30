@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'fat_zebra/request/multipart/part'
 require 'fat_zebra/request/multipart/stream'
 require 'fat_zebra/request/multipart/epilogue'

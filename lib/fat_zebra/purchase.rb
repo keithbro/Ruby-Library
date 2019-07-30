@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FatZebra
   ##
   # == FatZebra \Purchase
@@ -71,8 +73,8 @@ module FatZebra
     def refund(params = {}, options = {})
       Refund.create({
         transaction_id: id,
-        amount:         amount,
-        reference:      reference
+        amount: amount,
+        reference: reference
       }.merge(params), options)
     end
 

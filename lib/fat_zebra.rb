@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Libraries
 require 'securerandom'
 require 'json'

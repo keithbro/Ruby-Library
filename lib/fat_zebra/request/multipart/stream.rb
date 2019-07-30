@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FatZebra
   ##
   # == FatZebra \Request \Multipart \Stream
@@ -7,7 +9,7 @@ module FatZebra
     module Multipart
       class Stream
 
-        BINARY_ENCODING = 'BINARY'.freeze
+        BINARY_ENCODING = 'BINARY'
 
         def initialize(*ios)
           @ios   = ios.flatten
